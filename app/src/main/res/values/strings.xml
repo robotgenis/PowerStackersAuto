@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PowerStackersAuto</string>
+    <string name="btnNew_text">New</string>
+    <string name="btnLoad_text">Load</string>
+    <string name="btnSave_text">Save</string>
+    <string name="title_activity_preview">Preview</string>
+</resources>
