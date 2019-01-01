@@ -30,7 +30,7 @@ public class PathGenerator {
         if(dataValueBool(4)){
             Points[] sample = (depotSide) ? new Points[]{Points.DEPOTSAMPLE1, Points.DEPOTSAMPLE2, Points.DEPOTSAMPLE3} : new Points[]{Points.CRATERSAMPLE1, Points.CRATERSAMPLE2, Points.CRATERSAMPLE3};
             addElement(sample[samplePos - 1]);
-            addElement(PathElement.newDelayFull(1.0));
+            //addElement(PathElement.newDelayFull(1.0));
         }else{
             addElement((depotSide) ? Points.DEPOTNOSAMPLE : Points.CRATERNOSAMPLE);
         }

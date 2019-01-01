@@ -48,6 +48,13 @@ public class MenuScreen extends AppCompatActivity {
             }
         });
 
+        final Button btnLoad = findViewById(R.id.btnLoadData);
+        btnLoad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { PathPoints.createPointsFileOneTimeOnly();
+            }
+        });
+
         Context context = getApplicationContext();
         if (context.getPackageManager().checkPermission( Manifest.permission.WRITE_EXTERNAL_STORAGE, context.getPackageName()) != PackageManager.PERMISSION_GRANTED) {
             int requestCode = 200;
